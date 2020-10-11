@@ -22,6 +22,28 @@
     flex: 1;
 }
 
+.body__icon {
+    display: flex;
+    align-items: center;
+}
+
+.body__icon > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.body_shuffle {
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body_shuffle:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
 .body__infoText > h2 {
     font-size: 48px;
     margin-bottom: 10px;

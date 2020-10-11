@@ -1,19 +1,36 @@
 import React from 'react';
 import './Body.css';
+import { useDataLayerValue } from './DataLayer';
 import Header from './Header';
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import FavoriteIcon from '@material-ui/icons/FavoriteOutlined';
+import MoreHorizonIcon from '@material-ui/icons/MoreHorizOutlined';
 
 
 function Body({ spotify }) {
+    const [{ discover_weekly }, dispatch] = useDataLayerValue();
+
     return (
         <div className="body">
            <Header spotify={spotify} />
 
            <div className="body__info">
-                <img src="https://newjams-images.scdn.co/v2/discover-weekly/aAbca4VNfzWuUCQ_FGiEFA==/bmVuZW5lbmVuZW5lbmVuZQ==/default" alt="" />
+                <img 
+                src={discover_weekly?.images[0].url}
+                alt="" 
+                />
                 <div className="body__infoText">
                     <strong>PLAYLIST</strong>
                     <h2>Discover Weekly</h2>
-                    <p>Description.....</p>
+                    <p>{discover_weekly?.description}</p>
+                </div>
+           </div>
+
+           <div className="body__songs">
+                <div className="body__icon">
+                    <PlayCircleFilledIcon className="body_shuffle" />
+                    <FavoriteIcon fontSize="large" />
+                    <MoreHorizonIcon />
                 </div>
            </div>
         </div>
