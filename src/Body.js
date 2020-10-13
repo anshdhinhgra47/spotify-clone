@@ -5,7 +5,7 @@ import Header from './Header';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import FavoriteIcon from '@material-ui/icons/FavoriteOutlined';
 import MoreHorizonIcon from '@material-ui/icons/MoreHorizOutlined';
-
+import SongRow from './SongRow';
 
 function Body({ spotify }) {
     const [{ discover_weekly }, dispatch] = useDataLayerValue();
@@ -32,6 +32,11 @@ function Body({ spotify }) {
                     <FavoriteIcon fontSize="large" />
                     <MoreHorizonIcon />
                 </div>
+
+            {discover_weekly?.tracks.items.map(item => (
+                <SongRow track={item.track} />
+            ))}
+
            </div>
         </div>
     )

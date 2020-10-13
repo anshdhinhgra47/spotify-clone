@@ -15,12 +15,12 @@ function Footer() {
         <div className="footer">
             <div className="footer__left">
                <img className="footer__albumLogo"
-               src="" 
+               src="https://upload.wikimedia.org/wikipedia/en/e/e5/Marshmello_and_Bastille_Happier.png" 
                alt="" 
                />
                <div className="footer__songInfo">
-                <h4>Yeah</h4>
-                <p>Usher</p>
+                <h4>Happier</h4>
+                <p>Marshmello</p>
                </div>
             </div>
 

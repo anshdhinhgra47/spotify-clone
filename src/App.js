@@ -42,7 +42,7 @@ function App() {
         });
       });
 
-      spotify.getPlaylist('1qvW13XhfMMZMlzQx362HR')
+      spotify.getPlaylist('5s0oFcCf89hs9Js3dON7zA')
         .then (response => {
           dispatch({
             type: 'SET_DISCOVER_WEEKLY',

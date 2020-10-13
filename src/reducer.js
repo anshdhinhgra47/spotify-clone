@@ -3,8 +3,7 @@ export const initialState = {
     playlists: [],
     playing: false,
     item: null,
-    // token value to be removed (have it null)
-    token: 'BQCYqZGHMEbCEmtVVF1Cf2QRK69dEibAv2FL0VHDpcMLhFTFd2_k6xYBoKWIjSvZhpgtRR82xGVpqcejmjkyg91NGe7fNcg-mzT-KD3gMmktcBgQTHAB0Bwfkylgob84y-apjk_HTanqzQrTqQX-SK0Q8R9sapMZH1NzJy-xQqhtk9ULp0C1'
+    token: null
 };
 
 const reducer = (state, action) => {
