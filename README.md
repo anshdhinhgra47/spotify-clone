@@ -29,4 +29,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-> This clone has only been built for educational purposes and shall not be used for illegal activities like phishing etc.
+> This clone hase been made by Ansh Dhingra for educational purposes and is not affiliated with Spotify in any way. All rights of the images, logos, and texts belong to Spotify. This project shall not be used for illegal activities that include Phishing, XSS Attack, among others.
